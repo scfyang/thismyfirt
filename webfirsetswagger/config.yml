@@ -1,0 +1,32 @@
+server:
+#  softNofileLimit: 1000
+#  hardNofileLimit: 1000
+  applicationConnectors:
+    - type: http
+      port: 8989
+  adminConnectors:
+    - type: http
+      port: 8081
+      
+swagger:
+  resourcePackage: com.web.resource
+  title: swagger说明文档　
+  version: v1
+  description: 学习Swagger
+  contact: xxx
+  
+logging:
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+  # Logger-specific levels.
+  appenders:
+    - type: console
+      threshold: INFO
+    - type: file
+      threshold: INFO
+      logFormat: "%-6level [%d{HH-mm-ss-SSS}] [%t] %logger{5} - %X{code} %msg %n"
+      currentLogFilename: ./logs/application.log
+      archivedLogFilenamePattern: ./logs/zip/application-%d{yyyy-MM-dd}-%i.log.gz
+      archivedFileCount: 7
+      timeZone: UTC
+      maxFileSize: 10MiB

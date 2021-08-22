@@ -1,0 +1,27 @@
+INFO   [01-31-59-411] [main] o.e.j.u.log -  Logging initialized @2123ms 
+INFO   [01-31-59-587] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: swagger-assets for path /swagger-static/* 
+INFO   [01-31-59-767] [main] o.r.Reflections -  Reflections took 105 ms to scan 1 urls, producing 11 keys and 11 values  
+INFO   [01-31-59-830] [main] i.d.s.ServerFactory -  Starting sumop 
+INFO   [01-31-59-845] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [01-31-59-943] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [01-31-59-994] [main] o.e.j.s.SetUIDListener -  Opened application@2c282004{HTTP/1.1}{0.0.0.0:8989} 
+INFO   [01-31-59-994] [main] o.e.j.s.SetUIDListener -  Opened admin@22ee2d0{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [01-31-59-999] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [01-32-00-837] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /api/websimu/v1/sum/sum1 (com.web.resource.SumRestful)
+    GET     /swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /swagger.json (com.wordnik.swagger.jaxrs.listing.ApiListingResource)
+    GET     /swagger.yaml (com.wordnik.swagger.jaxrs.listing.ApiListingResource)
+ 
+INFO   [01-32-00-842] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4096aa05{/,null,AVAILABLE} 
+INFO   [01-32-00-851] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+INFO   [01-32-00-859] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@3c35c345{/,null,AVAILABLE} 
+INFO   [01-32-01-145] [main] o.e.j.s.ServerConnector -  Started application@2c282004{HTTP/1.1}{0.0.0.0:8989} 
+INFO   [01-32-01-148] [main] o.e.j.s.ServerConnector -  Started admin@22ee2d0{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [01-32-01-150] [main] o.e.j.s.Server -  Started @3862ms 
+INFO   [01-32-23-011] [dw-14 - GET /swagger.json] o.r.Reflections -  Reflections took 71 ms to scan 1 urls, producing 11 keys and 11 values  
